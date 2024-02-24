@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop-up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-search">
+        <input
+          type="text"
+          placeholder="Enter your email id"
+          class="search- box"
+        />
+        <div class="password">
+          <input
+            type="password"
+            placeholder="Enter the password"
+            class="passBox"
+          />
+          <img src="images/eye-close.png" class="close" />
+        </div>
+        <input
+          type="button"
+          value="Submit"
+          class="btn1"
+          onclick="openPopup()"
+        />
+      </div>
+
+      <div class="pop-Up" id="Popup">
+        <img src="images/tick.png" />
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted. Thanks!</p>
+        <button class="btn2" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

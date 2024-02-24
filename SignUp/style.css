@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: #3c5077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-search {
+    background-color: #222;
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 3rem 0;
+    border-radius: 1rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    height: 2rem;
+    padding-left: 1rem;
+    font-size: 15px;
+    border-radius: 0.2rem;
+}
+
+.btn1 {
+    font-size: 17px;
+    background-color: #205fdc;
+}
+
+.pop-Up {
+    width: 30%;
+    background: #fff;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0 30px 30px;
+    transform: translate(-50%,-50%) scale(0.1);
+    color: #333;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-Popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.pop-Up img {
+    margin-top: -50px;
+    width: 5.5rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h2{
+    font-size: 30px;
+    margin: 30px 0 10px;
+    font-weight: 500;
+    
+}
+.btn2{
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 50px;
+    background: #6fd649;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+.password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.close{
+    width: 20px;
+    position: relative;
+    right: 2rem;
+}
+.passBox{
+    width: 20rem;
+}
